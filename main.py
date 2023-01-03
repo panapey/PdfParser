@@ -28,4 +28,5 @@ class PdfParser:
 
 if __name__ == '__main__':
     parser = PdfParser()
-    parser.pars(parser.find_file('Files/'), docx_file)
+    directory = input('Input path to your pdf file\n')
+    parser.pars(parser.find_file(directory), docx_file)
